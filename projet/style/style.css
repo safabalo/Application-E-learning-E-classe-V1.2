@@ -1,0 +1,341 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+:root{
+    --page:#E5E5E5;
+    --police:#ACACAC;
+    --info:#00C1FE;
+    --sidebar: #FAFFC1;
+    --student:#F0F9FF;
+    --course:#FEF6FB;
+    --payments:#FEFBEC;
+    --users:linear-gradient(110.42deg, #00C1FE 18.27%, #FAFFC1 91.84%);
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+.sign_in{
+    margin-right: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.sign_in h1{
+    align-self: flex-start;
+}
+.title_sign_in legend{
+    padding-left: 35%;
+}
+body{
+    background-color: var(--page);
+    font-family: 'Montserra' sans-serif;
+}
+h1{
+    display: none;
+}
+#admin{
+    display: none;
+}
+.admin{
+    display:none;
+}
+.paragraph{
+    display: none;
+}
+
+.sidebar{
+        width: 10%;
+        background-color: var(--sidebar);
+    }
+.navbar-nav{
+        margin-top: -50px;
+    }
+header{
+        width: 90%;
+    }
+    .search-wrapper {
+        position: relative;
+    }
+    .search-wrapper input{
+        border: solid 1px var(--page);
+        border-radius: 2px;
+        width: 60px;
+    }
+    .search-wrapper input::placeholder{
+        color: var(--police);
+        padding-left: 2px;
+        font-size: 10px;
+    }
+    .search-wrapper img {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        padding-left: 90%;
+        padding-top: 5px;
+        color: var(--page);
+    }
+.notification{
+    display: flex;
+    margin-right: 10px;
+}
+#notification_bell{
+    margin-left: 20px;
+}
+main{
+    width: 87%;
+    overflow-x: scroll; 
+}
+.dashbord{
+    margin-right: 10px !important;
+}
+
+li .student{
+ background-color: var(--info);
+ height: 30px !important;
+ padding: 15px 0;
+}
+.payment__table{
+    width:95%;
+}
+.list_elements:focus
+{
+    background-color: var(--info) !important ; 
+}
+#student{
+    padding-top: -10px;
+}
+.numbers{
+    padding-left: 70%;
+}
+.student_table{
+    width: 95%;
+    margin-left: 20px;
+    border-spacing: 0 10px;
+    border-collapse: separate;
+}
+.table__elements{
+    border:solid 5px white;
+    background-color: white;
+}
+.student__list{
+    width: 97% !important;
+    border-bottom: rgb(204, 201, 204) 1px solid;
+}
+.thead__elements{
+    color: var(--police);
+
+}
+.article_1{
+    background-color: var(--student);
+    width: 90%;
+    margin-left: 15px;
+    border-radius: 5px;
+}
+.article_2{
+    background-color: var(--course);
+    width: 90%;
+    margin-left: 15px;
+    border-radius: 5px;
+}
+.article_3{
+    background-color: var(--payments);
+    width: 90%;
+    margin-left: 15px;
+    border-radius: 5px;
+}
+.article_4{
+    background:var(--users);
+    width: 90%;
+    margin-left: 15px;
+    border-radius: 5px;
+}
+@media screen and (min-width:768px){
+    .sidebar{
+        width: 5%;
+        background-color: var(--sidebar);
+    }
+.navbar-nav{
+        margin-top: -50px;
+    }
+header{
+        width: 95%;
+    }
+    main{
+        width: 95%;
+        overflow-x: hidden; 
+    }
+    .search-wrapper input{
+        border: solid 1px var(--page);
+        border-radius: 2px;
+        width:150px;
+
+    }
+    .search-wrapper input::placeholder{
+        color: var(--police);
+        padding-left: 2px;
+        font-size: 14px;
+    }
+    .search-wrapper img {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        padding-left: 90%;
+        padding-top: 5px;
+        color: var(--page);
+    }
+    .notification{
+        display: flex;
+        margin-right: 10px;
+    }
+    #notification_bell{
+        margin-left: 20px;
+    }
+    .article_1{
+        background-color: var(--student);
+        width: 45%;
+        margin-left: 15px;
+        border-radius: 5px;
+    }
+    .article_2{
+        background-color: var(--course);
+        width: 45%;
+        margin-left: 15px;
+        border-radius: 5px;
+    }
+    .article_3{
+        background-color: var(--payments);
+        width: 45%;
+        margin-left: 15px;
+        border-radius: 5px;
+    }
+    .article_4{
+        background-color: var(--users);
+        width: 45%;
+        margin-left: 15px;
+        border-radius: 5px;
+    }
+    .first_section{
+        width: 100;
+        display: flex;
+        margin-left: 5px;
+    }
+    .second_section{
+        width: 100;
+        display: flex;
+        margin-top: 20px;
+        margin-left: 5px;
+    }
+}
+@media screen and (min-width:993px){
+    .page{
+        font-family:'Montserrat', sans-serif;
+        background: linear-gradient(69.66deg, #00C1FE 19.39%, #FAFFC1 96.69%)  !important;
+        min-height: 100vh  !important;
+    }
+    .sign_in{
+        display: block;
+        margin-top: 5% !important;
+        margin-right: 30%;
+        border-radius: 20px;
+        width: 35%;
+        padding-right: 0px;
+    }
+    .sign_in h1{
+        font-size: 32px;
+    }
+    .title_sign_in{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .title_sign_in legend{
+        font-size: 22px;
+    }
+    .title_sign_in p{
+        font-size: 14px;
+    }
+    ::placeholder{
+        color: #cdcdcd;
+        font-size: 12px;
+    }
+    .forgrt_password{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 14px;
+    }
+    .user_sing{
+        width:90%;
+        box-shadow:0;
+    }
+    header{
+        width:80%;
+        z-index: 200;
+    }
+    .sidebar{
+        width: 20% !important;
+        height: 100vh !important;
+    }
+    #admin{
+        border-radius: 50%;
+    }
+    main{
+        width:80%;
+    }
+    li a{
+        margin-bottom: -30px;
+    }
+    .list_elements{
+        margin-top: -17px;
+    }
+    .sidebar ul{
+        margin-top: 5%;
+    }
+    .sidebar h1{
+        display: block !important;
+    }
+    main{
+        overflow-x: hidden;
+        z-index: 100;
+    }
+    .article_1{
+        background-color: var(--student);
+        width: 49%;
+        margin-left: 15px;
+        border-radius: 5px;
+    }
+    .article_2{
+        background-color: var(--course);
+        width: 49%;
+        margin-left: 15px;
+        border-radius: 5px;
+    }
+    .article_3{
+        background-color: var(--payments);
+        width: 49%;
+        margin-left: 15px;
+        border-radius: 5px;
+    }
+    .article_4{
+        background-color: var(--users);
+        width: 49%;
+        margin-left: 15px;
+        border-radius: 5px;
+    }
+    .first_section{
+        width: 48%;
+        display: flex;
+        margin-left: 5px;
+        margin-top: 20px;
+    }
+    .second_section{
+        width: 48%;
+        display: flex;
+        margin-top: 20px;
+        margin-left: 5px;
+    }
+    .dashbord{
+        display:flex;
+    }
+}
