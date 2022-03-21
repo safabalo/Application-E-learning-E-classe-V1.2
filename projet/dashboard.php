@@ -1,4 +1,13 @@
 <?php
+session_start();
+if(empty($_SESSION["active"])){
+    header('location: index.php');
+}
+
+
+?>
+
+<?php
 $mysqli = new mysqli('localhost', 'root', '', 'studentdb') or die (mysqli_error($mysqli));
 $students=$mysqli->query("SELECT COUNT(id) FROM mystudents") or die (mysqli_error($mysqli)) ;
 $student = $students->fetch_array();

@@ -11,7 +11,7 @@
     <title>Add new student</title>
 </head>
 <body class="page vh-100">
-    <form action="crudcourse.php" method="POST" class="bg-white d-flex justify-content-center container-fluid bg-white sign_in p-3 w-md-75">
+    <form action="crudcourse.php" method="POST" class=" d-flex justify-content-center container-fluid bg-white sign_in p-3 w-md-75">
         <fieldset>
             <legend class="mb-3 align-self-start">Inserez un nouveau utilisateur</legend>
             <div class="mb-3">

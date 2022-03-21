@@ -1,3 +1,4 @@
+
 <nav class="sidebar navbar float-start vh-100 position-fixed">
         <ul class="navbar-nav d-md-flex justify-content-md-center ms-md-3">
             <li class=" d-sm-none d-lg-block">
@@ -7,7 +8,13 @@
                 <img src="img/Admin-photo.png" alt="" id="admin" height="100px" width="100px" class="ms-5 d-sm-none d-lg-block">
             </li>
             <li>
-                <h3 class="ms-3 d-sm-none d-lg-block admin">Admin name</h3>
+                <h3 class="ms-3 d-sm-none d-lg-block admin"> <?php
+                if($_SESSION["first_name"] && $_SESSION["last_name"] ) {
+                ?>
+                <?php echo $_SESSION["first_name"], " " ,$_SESSION["last_name"] ; ?>
+                <?php
+                }else echo "<h1>Please login first .</h1>";
+                ?></h3>
             </li>
             <li class="text-info h5 ms-5 d-sm-none d-lg-block admin">Admin</li>
             <li class="list_elements ms-lg-5 mb-md-3">
@@ -47,7 +54,7 @@
                 </a>
             </li>
             <li class="list_elements ms-lg-5 mt-lg-1 mb-md-3">
-                <a href="index.php" class="d-flex nav-link text-black">
+                <a href="logout.php" class="d-flex nav-link text-black">
                     <p class="pt-lg-3 pe-lg-2 d-sm-none d-lg-block paragraph">Logout</p>
                     <img src="img/Logout.svg" alt="logout">
                 </a>
